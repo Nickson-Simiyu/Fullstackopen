@@ -1,0 +1,16 @@
+New note in Single page app diagram
+
+
+participant User
+participant Browser
+participant Server
+
+
+User->Browser:Loads page
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server->Browser:HTML Document
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server->Browser:Js file
+User->Browser:inputs new note and saves
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+

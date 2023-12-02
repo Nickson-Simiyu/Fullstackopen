@@ -1,0 +1,17 @@
+Single page app diagram
+
+
+participant User
+participant Browser
+participant Server
+
+
+User->Browser:Loads page
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server->Browser:HTML Document
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser:Css file
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server->Browser:Js file
+Browser->Server:GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser:{"content": "sdgsdg","date": "2023-12-02T02:05:29.598Z"}
